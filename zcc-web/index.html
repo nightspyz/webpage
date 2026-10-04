@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF to ZCC</title>
+<style>
+  :root{--bg:#fff;--fg:#222;--muted:#666;--line:#888;--accent:#2a6fdb;--over:#eef5ff;--errbg:#fde8e8;--errbd:#e0a0a0;--okbg:#e8f6ec;--okbd:#9fd0ac}
+  @media (prefers-color-scheme:dark){:root{--bg:#16181c;--fg:#e6e6e6;--muted:#9aa;--line:#667;--accent:#6aa3ff;--over:#1e2a3d;--errbg:#3a1f1f;--errbd:#7a3a3a;--okbg:#1c3324;--okbd:#3b7a50}}
+  body{font-family:system-ui,sans-serif;max-width:600px;margin:40px auto;padding:0 16px;color:var(--fg);background:var(--bg)}
+  h1{font-size:1.4rem}
+  #drop{border:2px dashed var(--line);border-radius:8px;padding:32px;text-align:center;cursor:pointer}
+  #drop.over{background:var(--over);border-color:var(--accent)}
+  label.opt{display:block;margin:12px 0}
+  button{padding:10px 18px;font-size:1rem;cursor:pointer}
+  button:disabled{opacity:.5;cursor:default}
+  .msg{padding:10px;border-radius:6px;margin:12px 0;white-space:pre-wrap}
+  .err{background:var(--errbg);border:1px solid var(--errbd)}
+  .ok{background:var(--okbg);border:1px solid var(--okbd)}
+  small,.hint{color:var(--muted)}
+  code{font-size:.9em}
+</style>
+</head>
+<body>
+<h1>PDF to ZCC converter</h1>
+<div id="drop" tabindex="0">Drop a PDF here or click to choose<br><small id="fname"></small></div>
+<input id="file" type="file" accept="application/pdf,.pdf" hidden>
+<label class="opt"><input type="checkbox" id="dbl"> Add a second thru-cut pass (method <code>c_2</code>)</label>
+<label class="opt">Template .zcc (optional; default is the bundled reference job)<br>
+  <input type="file" id="tpl" accept=".zcc,.xml"></label>
+<button id="go" disabled>Convert and download .zcc</button>
+<div id="out"></div>
+<p class="hint"><small>Runs entirely in your browser; the PDF is not uploaded. PDF layers <code>c</code>, <code>b</code>, <code>v</code>, <code>s</code> select the tool method (stroke colour is the fallback), and dark filled circles become registration marks. Material, tool settings and PrepareSteps come from the template.</small></p>
+
+<script src="lib/pdf.min.js"></script>
+<script src="lib/pdf.worker.min.js"></script>
+<script src="template.js"></script>
+<script src="pdf2zcc.js"></script>
+<script>
+  // The worker script is loaded above so pdf.js can run it on the main thread (works from file:// too).
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "lib/pdf.worker.min.js";
+  const $ = (id) => document.getElementById(id);
+  let pdfFile = null;
+
+  function setFile(f) {
+    pdfFile = f && /\.pdf$/i.test(f.name) ? f : null;
+    $("fname").textContent = f ? f.name : "";
+    $("go").disabled = !pdfFile;
+    show(f && !pdfFile ? "Please choose a PDF file." : "", "err");
+  }
+  function show(text, cls) {
+    $("out").innerHTML = "";
+    if (!text) return;
+    const d = document.createElement("div");
+    d.className = "msg " + cls; d.textContent = text; $("out").appendChild(d);
+  }
+
+  const drop = $("drop");
+  drop.onclick = () => $("file").click();
+  drop.onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") $("file").click(); };
+  $("file").onchange = (e) => setFile(e.target.files[0]);
+  drop.ondragover = (e) => { e.preventDefault(); drop.classList.add("over"); };
+  drop.ondragleave = () => drop.classList.remove("over");
+  drop.ondrop = (e) => { e.preventDefault(); drop.classList.remove("over"); setFile(e.dataTransfer.files[0]); };
+
+  $("go").onclick = async () => {
+    $("go").disabled = true; show("Converting…", "ok");
+    try {
+      const tplFile = $("tpl").files[0];
+      const template = tplFile ? await tplFile.text() : window.ZCC_TEMPLATE;
+      const doc = await pdfjsLib.getDocument({ data: new Uint8Array(await pdfFile.arrayBuffer()) }).promise;
+      const page = await doc.getPage(1);
+      const oc = await doc.getOptionalContentConfig();
+      const ops = await page.getOperatorList();
+      const name = pdfFile.name.replace(/\.pdf$/i, "") + ".pdf.zcc";
+      const r = Pdf2Zcc.build(template, ops, pdfjsLib.OPS, (id) => { const g = oc.getGroup(id); return g ? g.name : null; },
+                              name, $("dbl").checked);
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([r.text], { type: "application/xml" }));
+      a.download = name; document.body.appendChild(a); a.click(); a.remove();
+      const counts = Object.entries(r.outl).map(([k, v]) => `${k}: ${v.length}`).join(", ");
+      show(`Saved ${name}\n${r.regs.length} registration marks; outlines ${counts}` +
+           (doc.numPages > 1 ? `\nNote: only page 1 of ${doc.numPages} was converted.` : "") +
+           (r.warnings.length ? "\nWarnings:\n" + r.warnings.join("\n") : ""), "ok");
+    } catch (e) {
+      show("Conversion failed: " + (e && e.message || e), "err");
+    } finally { $("go").disabled = !pdfFile; }
+  };
+</script>
+</body>
+</html>
