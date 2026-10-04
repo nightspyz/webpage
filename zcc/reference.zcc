@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZCC_cmd MessageID="2353" CommandID="jobdescription" xsi:noNamespaceSchemaLocation="file:ZCC_cmd.xsd" Version="2070" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zcc="www.zund.com/ZCC">
+ <Job Name="507737yv_cut.pdf.zcc" FluteDirectionX="false">
+  <Meta Reserved="3506">
+   <Description>PDF Import</Description>
+   <Priority>Low</Priority>
+   <Creation Name="Cut Editor" Version="2.7.10.25006" Date="2026-09-28T11:34:28"/>
+  </Meta>
+  <PrepareSteps Data="9RfajQAAAAgAAAACAAAAAAAAAAAAAAABP/AAAahlVJm/TqQc8G4L0kBrCv5PlHZPP1cB5rhOkt4/7/upZGhDA0B/tWNPfMdlAAAABUBrCv5PlHZQQH+1Y098x2VAau8Lny8p8ECWg15Uab5qQGrspszsYVdAl8My8lXRCECenZesaiBBQJfM/sGSSntAnqFinL8i30B/3JKMbq03AAAABUBrCy9bhwPpQH+2qAe5lrtAau9fxVWvEkCWgzHTlX95QGrsIZrTTqlAl8MORRrcLECenZ6iWvB6QJfNTGzJzipAnqFbps5Sp0B/21vfkJ6IAD/wAAGoZVSZv06kHPBuC9JAawr+T5R2Tz9XAea4TpLeP+/7qWRoQwNAf7VjT3zHZT/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/AAAAAAAAAAAAAAAAAAAD/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAP+///HZ5DBS/XheLD1RoPkBN5zAe5CrhP14Xiw9UaD4/7//8dnkMFEBUR7CwdW+kP+///HZ5DBS/XheLD1RoPkBN5zAe5CrhP14Xiw9UaD4/7//8dnkMFEBUR7CwdW+kP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/8AAAAAAAAAAAAAAAAAAAP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" Checksum="6410"/>
+  <Material Name="X-Board" GUID="{5f348388-2beb-492c-bf52-a64335fff655}">
+   <MaterialSettings Thickness="15.5">
+    <Parameter Id="VacuumLevel" TypeId="98" Value="8"/>
+    <Parameter Id="FeedCompensation" TypeId="166" Value="0"/>
+   </MaterialSettings>
+  </Material>
+  <Geometry>
+   <Point X="0.000" Y="0.000">
+    <Method Type="Register" Name="Layer 1"/>
+   </Point>
+   <Point X="0.000" Y="934.000">
+    <Method Type="Register" Name="Layer 1"/>
+   </Point>
+   <Point X="0.000" Y="1014.000">
+    <Method Type="Register" Name="Layer 1"/>
+   </Point>
+   <Point X="1744.000" Y="1014.000">
+    <Method Type="Register" Name="Layer 1"/>
+   </Point>
+   <Point X="1744.000" Y="0.000">
+    <Method Type="Register" Name="Layer 1"/>
+   </Point>
+   <Outline>
+    <MoveTo X="21.981" Y="57.001"/>
+    <LineTo X="71.981" Y="57.001"/>
+    <LineTo X="71.981" Y="6.998"/>
+    <Method Type="Bevel-cut" Name="b"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="71.981" Y="1007.000"/>
+    <LineTo X="71.981" Y="957.001"/>
+    <LineTo X="21.982" Y="957.001"/>
+    <Method Type="Bevel-cut" Name="b"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1722.017" Y="957.001"/>
+    <LineTo X="1672.015" Y="957.001"/>
+    <LineTo X="1672.016" Y="1007.000"/>
+    <Method Type="Bevel-cut" Name="b"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1672.016" Y="6.999"/>
+    <LineTo X="1672.016" Y="57.002"/>
+    <LineTo X="1722.019" Y="57.002"/>
+    <Method Type="Bevel-cut" Name="b"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="121.929" Y="607.002"/>
+    <LineTo X="121.929" Y="407.002"/>
+    <LineTo X="137.928" Y="407.002"/>
+    <LineTo X="137.928" Y="607.002"/>
+    <LineTo X="121.929" Y="607.002"/>
+    <Method Type="Score" Name="s"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="471.917" Y="890.812"/>
+    <LineTo X="471.917" Y="906.811"/>
+    <LineTo X="271.917" Y="906.811"/>
+    <LineTo X="271.917" Y="890.812"/>
+    <LineTo X="471.917" Y="890.812"/>
+    <Method Type="Score" Name="s"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="971.916" Y="890.812"/>
+    <LineTo X="971.916" Y="906.811"/>
+    <LineTo X="771.916" Y="906.811"/>
+    <LineTo X="771.916" Y="890.812"/>
+    <LineTo X="971.916" Y="890.812"/>
+    <Method Type="Score" Name="s"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1471.919" Y="890.812"/>
+    <LineTo X="1471.919" Y="906.811"/>
+    <LineTo X="1271.918" Y="906.811"/>
+    <LineTo X="1271.918" Y="890.812"/>
+    <LineTo X="1471.919" Y="890.812"/>
+    <Method Type="Score" Name="s"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1622.067" Y="407.002"/>
+    <LineTo X="1622.067" Y="607.002"/>
+    <LineTo X="1606.069" Y="607.002"/>
+    <LineTo X="1606.069" Y="407.002"/>
+    <LineTo X="1622.067" Y="407.002"/>
+    <Method Type="Score" Name="s"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="21.981" Y="57.001"/>
+    <LineTo X="21.981" Y="957.001"/>
+    <Method Type="Thru-cut" Name="c"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="71.982" Y="1007.000"/>
+    <LineTo X="1672.016" Y="1007.000"/>
+    <Method Type="Thru-cut" Name="c"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1722.017" Y="957.000"/>
+    <LineTo X="1722.017" Y="57.001"/>
+    <Method Type="Thru-cut" Name="c"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1672.015" Y="6.999"/>
+    <LineTo X="71.981" Y="6.999"/>
+    <Method Type="Thru-cut" Name="c"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1672.017" Y="957.000"/>
+    <LineTo X="1672.017" Y="57.001"/>
+    <LineTo X="71.980" Y="57.001"/>
+    <LineTo X="71.980" Y="957.000"/>
+    <LineTo X="1672.017" Y="957.000"/>
+    <Method Type="V-cut" Name="v"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="21.981" Y="57.001"/>
+    <LineTo X="21.981" Y="957.001"/>
+    <Method Type="Thru-cut" Name="c_2"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="71.982" Y="1007.000"/>
+    <LineTo X="1672.016" Y="1007.000"/>
+    <Method Type="Thru-cut" Name="c_2"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1722.017" Y="957.000"/>
+    <LineTo X="1722.017" Y="57.001"/>
+    <Method Type="Thru-cut" Name="c_2"/>
+   </Outline>
+   <Outline>
+    <MoveTo X="1672.015" Y="6.999"/>
+    <LineTo X="71.981" Y="6.999"/>
+    <Method Type="Thru-cut" Name="c_2"/>
+   </Outline>
+  </Geometry>
+  <Copies>
+   <NCopies>1</NCopies>
+   <DoneCopies>0</DoneCopies>
+   <DonePages>0</DonePages>
+   <NRepetitionX>1</NRepetitionX>
+   <NRepetitionY>1</NRepetitionY>
+   <MinDistanceX>0.000</MinDistanceX>
+   <MinDistanceY>0.000</MinDistanceY>
+   <PageDistance>1456.000</PageDistance>
+  </Copies>
+  <Orientation>1</Orientation>
+  <JobProcessing Name="Manual feed" GUID="{963da40c-5b83-4781-b96d-dc39567bb375}" AutoPagePos="1">
+   <FeedType>manual</FeedType>
+   <StartOfProduction>
+    <Vacuum>Suck</Vacuum>
+   </StartOfProduction>
+   <EndOfProduction>
+    <MoveToPark/>
+    <Vacuum>Off</Vacuum>
+   </EndOfProduction>
+   <StartOfPage>
+    <Vacuum>Suck</Vacuum>
+   </StartOfPage>
+   <EndOfPage>
+    <MoveToPark/>
+    <Vacuum>Blow</Vacuum>
+    <Vacuum>Off</Vacuum>
+   </EndOfPage>
+  </JobProcessing>
+  <Feed>
+   <BoundingBox>
+    <BottomLeft X="-15.019" Y="-30.002"/>
+    <TopRight X="1759.019" Y="1044.000"/>
+   </BoundingBox>
+  </Feed>
+  <Methods>
+   <Method Type="Register" Color="000000" RegistrationType="bestFit">
+    <ToolConfig ToolID="14" Tool="Register" CuttingMode="standard" Generation="All">
+     <ToolInsert Insert="Camera" InsertID="1">
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="BorderMasterAxis" TypeId="138" Value="0"/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Register" Color="000000" Name="Layer 1" RegistrationType="bestFit">
+    <ToolConfig ToolID="14" Tool="Register" CuttingMode="standard" Generation="All">
+     <ToolInsert Insert="Camera" InsertID="1">
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="BorderMasterAxis" TypeId="138" Value="0"/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Register" Color="000000" Name="-1" RegistrationType="borderFrontRight">
+    <ToolConfig ToolID="14" Tool="Register" CuttingMode="standard" Generation="All">
+     <ToolInsert Insert="Camera" InsertID="1">
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="BorderMasterAxis" TypeId="138" Value="0"/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <ActionStep Type="FlipX"/>
+   <ActionStep Type="EndOfPrepare"/>
+   <Method Type="Register" Color="000000" Name="-2" RegistrationType="borderRecall">
+    <ToolConfig ToolID="14" Tool="Register" CuttingMode="standard" Generation="All">
+     <ToolInsert Insert="Camera" InsertID="1">
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="BorderMasterAxis" TypeId="138" Value="0"/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Score" Color="aa0000" CuttingMode="standard">
+    <ToolConfig ToolID="28" Tool="EOT-250" CuttingMode="standard" Generation="G3">
+     <ToolInsert Insert="Z21" InsertID="13">
+      <Parameter Id="XYAccelerationDown" TypeId="1" Value="4"/>
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedDown" TypeId="15" Value="150"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="ZSpeedDown" TypeId="18" Value="100"/>
+      <Parameter Id="ZSpeedUp" TypeId="17" Value="200"/>
+      <Parameter Id="TangentialLiftAngle" TypeId="3" Value="40"/>
+      <Parameter Id="AutoClearingDistance" TypeId="101" Value="1"/>
+      <Parameter Id="ZClearingDistance" TypeId="19" Value="5"/>
+      <Parameter Id="ScoreDepth" TypeId="87" Value="95"/>
+      <Parameter Id="DoOvercut" TypeId="34" Value="0"/>
+      <Parameter Id="StartOvercut" TypeId="35" Value="0"/>
+      <Parameter Id="StopOvercut" TypeId="36" Value="0"/>
+      <Parameter Id="DoBladeCompensation" TypeId="116" Value="0"/>
+      <Parameter Id="BladeCompFactorX" TypeId="122" Value="100"/>
+      <Parameter Id="BladeCompCorrectY" TypeId="123" Value="0"/>
+      <Parameter Id="GenericParameter" TypeId="38" Value=""/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Score" Color="aa0000" Name="s" CuttingMode="standard">
+    <ToolConfig ToolID="28" Tool="EOT-250" CuttingMode="standard" Generation="G3">
+     <ToolInsert Insert="Z21" InsertID="13">
+      <Parameter Id="XYAccelerationDown" TypeId="1" Value="4"/>
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedDown" TypeId="15" Value="150"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="ZSpeedDown" TypeId="18" Value="100"/>
+      <Parameter Id="ZSpeedUp" TypeId="17" Value="200"/>
+      <Parameter Id="TangentialLiftAngle" TypeId="3" Value="40"/>
+      <Parameter Id="AutoClearingDistance" TypeId="101" Value="1"/>
+      <Parameter Id="ZClearingDistance" TypeId="19" Value="5"/>
+      <Parameter Id="ScoreDepth" TypeId="87" Value="95"/>
+      <Parameter Id="DoOvercut" TypeId="34" Value="0"/>
+      <Parameter Id="StartOvercut" TypeId="35" Value="0"/>
+      <Parameter Id="StopOvercut" TypeId="36" Value="0"/>
+      <Parameter Id="DoBladeCompensation" TypeId="116" Value="0"/>
+      <Parameter Id="BladeCompFactorX" TypeId="122" Value="100"/>
+      <Parameter Id="BladeCompCorrectY" TypeId="123" Value="0"/>
+      <Parameter Id="GenericParameter" TypeId="38" Value=""/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Thru-cut" Color="aa0000" Name="c_2" CuttingMode="standard" OffsetSide="outside">
+    <ToolConfig ToolID="28" Tool="EOT-250" CuttingMode="standard" Generation="G3">
+     <ToolInsert Insert="Z21" InsertID="13">
+      <Parameter Id="XYAccelerationDown" TypeId="1" Value="4"/>
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedDown" TypeId="15" Value="300"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="ZSpeedDown" TypeId="18" Value="100"/>
+      <Parameter Id="ZSpeedUp" TypeId="17" Value="200"/>
+      <Parameter Id="TangentialLiftAngle" TypeId="3" Value="40"/>
+      <Parameter Id="AutoClearingDistance" TypeId="101" Value="1"/>
+      <Parameter Id="ZClearingDistance" TypeId="19" Value="15.5"/>
+      <Parameter Id="ZOverDepth" TypeId="20" Value="1.2"/>
+      <Parameter Id="DoOvercut" TypeId="34" Value="0"/>
+      <Parameter Id="StartOvercut" TypeId="35" Value="0"/>
+      <Parameter Id="StopOvercut" TypeId="36" Value="0"/>
+      <Parameter Id="DoBladeCompensation" TypeId="116" Value="0"/>
+      <Parameter Id="BladeCompFactorX" TypeId="122" Value="100"/>
+      <Parameter Id="BladeCompCorrectY" TypeId="123" Value="0"/>
+      <Parameter Id="GenericParameter" TypeId="38" Value=""/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Crease" Color="00aa00" CuttingMode="standard"/>
+   <Method Type="V-cut" Color="6c6c00" Name="v" CuttingMode="standard" GroovingAngle="45">
+    <ToolConfig ToolID="7" Tool="VCT" CuttingMode="standard" Generation="G3">
+     <ToolInsert Insert="Z73" InsertID="38">
+      <Parameter Id="XYAccelerationDown" TypeId="1" Value="4"/>
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedDown" TypeId="15" Value="300"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="ZSpeedDown" TypeId="18" Value="50"/>
+      <Parameter Id="ZSpeedUp" TypeId="17" Value="200"/>
+      <Parameter Id="TangentialLiftAngle" TypeId="3" Value="45"/>
+      <Parameter Id="ZClearingDistance" TypeId="19" Value="5"/>
+      <Parameter Id="ZOverDepth" TypeId="20" Value="-0.3"/>
+      <Parameter Id="DelayAfterDown" TypeId="9" Value="50"/>
+      <Parameter Id="DoOvercut" TypeId="34" Value="0"/>
+      <Parameter Id="StartOvercut" TypeId="35" Value="0"/>
+      <Parameter Id="StopOvercut" TypeId="36" Value="0"/>
+      <Parameter Id="VCutGap" TypeId="165" Value="0"/>
+      <Parameter Id="GenericParameter" TypeId="38" Value=""/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Bevel-cut" Color="005500" Name="b" CuttingMode="standard" GroovingAngle="45" OffsetSide="outside">
+    <ToolConfig ToolID="7" Tool="VCT" CuttingMode="standard" Generation="G3">
+     <ToolInsert Insert="Z73" InsertID="38">
+      <Parameter Id="XYAccelerationDown" TypeId="1" Value="4"/>
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedDown" TypeId="15" Value="300"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="ZSpeedDown" TypeId="18" Value="50"/>
+      <Parameter Id="ZSpeedUp" TypeId="17" Value="200"/>
+      <Parameter Id="DelayAfterDown" TypeId="9" Value="50"/>
+      <Parameter Id="TangentialLiftAngle" TypeId="3" Value="20"/>
+      <Parameter Id="ZClearingDistance" TypeId="19" Value="20"/>
+      <Parameter Id="ZOverDepth" TypeId="20" Value="1.5"/>
+      <Parameter Id="DoOvercut" TypeId="34" Value="0"/>
+      <Parameter Id="StartOvercut" TypeId="35" Value="0"/>
+      <Parameter Id="StopOvercut" TypeId="36" Value="0"/>
+      <Parameter Id="GenericParameter" TypeId="38" Value=""/>
+      <Parameter Id="Reverse" TypeId="37" Value="1"/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Thru-cut" Color="0000ff" CuttingMode="standard" OffsetSide="outside">
+    <ToolConfig ToolID="28" Tool="EOT-250" CuttingMode="standard" Generation="G3">
+     <ToolInsert Insert="Z21" InsertID="13">
+      <Parameter Id="XYAccelerationDown" TypeId="1" Value="4"/>
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedDown" TypeId="15" Value="300"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="ZSpeedDown" TypeId="18" Value="100"/>
+      <Parameter Id="ZSpeedUp" TypeId="17" Value="200"/>
+      <Parameter Id="TangentialLiftAngle" TypeId="3" Value="40"/>
+      <Parameter Id="AutoClearingDistance" TypeId="101" Value="1"/>
+      <Parameter Id="ZClearingDistance" TypeId="19" Value="15.5"/>
+      <Parameter Id="ZOverDepth" TypeId="20" Value="1.2"/>
+      <Parameter Id="DoOvercut" TypeId="34" Value="0"/>
+      <Parameter Id="StartOvercut" TypeId="35" Value="0"/>
+      <Parameter Id="StopOvercut" TypeId="36" Value="0"/>
+      <Parameter Id="DoBladeCompensation" TypeId="116" Value="0"/>
+      <Parameter Id="BladeCompFactorX" TypeId="122" Value="100"/>
+      <Parameter Id="BladeCompCorrectY" TypeId="123" Value="0"/>
+      <Parameter Id="GenericParameter" TypeId="38" Value=""/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+   <Method Type="Thru-cut" Color="0000ff" Name="c" CuttingMode="standard" OffsetSide="outside">
+    <ToolConfig ToolID="28" Tool="EOT-250" CuttingMode="standard" Generation="G3">
+     <ToolInsert Insert="Z21" InsertID="13">
+      <Parameter Id="XYAccelerationDown" TypeId="1" Value="4"/>
+      <Parameter Id="XYAccelerationUp" TypeId="2" Value="4"/>
+      <Parameter Id="XYSpeedDown" TypeId="15" Value="300"/>
+      <Parameter Id="XYSpeedUp" TypeId="14" Value="1000"/>
+      <Parameter Id="ZSpeedDown" TypeId="18" Value="100"/>
+      <Parameter Id="ZSpeedUp" TypeId="17" Value="200"/>
+      <Parameter Id="TangentialLiftAngle" TypeId="3" Value="40"/>
+      <Parameter Id="AutoClearingDistance" TypeId="101" Value="1"/>
+      <Parameter Id="ZClearingDistance" TypeId="19" Value="15.5"/>
+      <Parameter Id="ZOverDepth" TypeId="20" Value="1.2"/>
+      <Parameter Id="DoOvercut" TypeId="34" Value="0"/>
+      <Parameter Id="StartOvercut" TypeId="35" Value="0"/>
+      <Parameter Id="StopOvercut" TypeId="36" Value="0"/>
+      <Parameter Id="DoBladeCompensation" TypeId="116" Value="0"/>
+      <Parameter Id="BladeCompFactorX" TypeId="122" Value="100"/>
+      <Parameter Id="BladeCompCorrectY" TypeId="123" Value="0"/>
+      <Parameter Id="GenericParameter" TypeId="38" Value=""/>
+     </ToolInsert>
+    </ToolConfig>
+   </Method>
+  </Methods>
+ </Job>
+</ZCC_cmd>
